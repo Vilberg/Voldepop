@@ -1,0 +1,12 @@
+## Title: Volde|cffffffffpop|r
+## Notes: lol idk
+##
+## Interface: 30300
+##
+## Version: 0.1.1
+## Author: Voldebag
+##
+## SavedVariables: vp_optionsDB
+
+embeds.xml
+Voldepop.xml
