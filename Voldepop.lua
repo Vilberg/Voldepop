@@ -76,9 +76,9 @@ function vp_OptionsTable()
             }
          }
       }
-
-end
-return vp_options
+      
+   end
+   return vp_options
 end
 
 function vp_options_init()
@@ -166,18 +166,18 @@ end
 vp_frame:SetScript("OnEvent", function(self, event, ...)
       
       if (vp_addon.db.profile.vp_enable) then else FontrString:SetText("") return end
-
+      
       ---------------------------------------------------------
       -- Do work  
       vp_outText = ""
-	  channelNo = GetNumDisplayChannels()
-	  population = GetNumChannelMembers(channelNo)
-	  
-	  if (population == nil) then SetSelectedDisplayChannel(channelNo) return
-	  else vp_outText = "Pop: " .. population
-	  end
-	  
-	  --print(vp_outText)
-	  FontrString:SetText(vp_outText)
+      channelNo = GetNumDisplayChannels()
+      population = GetNumChannelMembers(channelNo)
+      
+      if (population == nil) then SetSelectedDisplayChannel(channelNo) return
+      else vp_outText = "Pop: " .. population
+      end
+      
+      --print(vp_outText)
+      FontrString:SetText(vp_outText)
       
 end)
